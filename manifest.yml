@@ -1,6 +1,6 @@
 ---
 applications:
-  - name: pal-tracket-roman
+  - name: pal-tracker
     path: build/libs/pal-tracker.jar
     routes:
       - route: pal-tracket-roman-vlc.apps.evans.pal.pivotal.io

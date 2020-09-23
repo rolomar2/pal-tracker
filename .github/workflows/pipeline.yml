@@ -18,7 +18,7 @@ jobs:
     - name: Publish artifact
       uses: actions/upload-artifact@v1
       with:
-        name: pal-tracket-roman
+        name: pal-tracker
         path: build/libs/pal-tracker.jar
 
   deploy:
@@ -35,7 +35,7 @@ jobs:
     - name: Download artifact
       uses: actions/download-artifact@v1
       with:
-        name: pal-tracket-roman
+        name: pal-tracker
     - name: Deploy to cf
       run: |
         cf api "$CF_API_URL"
